@@ -5,6 +5,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Page Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -13,17 +15,19 @@ header {
     border-bottom: 1px solid #252525;
 }
 
+/* Post Header */
+
 section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
+  width: 570px;
+  margin: 0 auto;
 }
 
 .post-header {
   display: flex;
   margin-top: 40px;
-  width: 570px;
 }
 
 .avatar {
@@ -36,17 +40,39 @@ section {
 .post-user-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   padding: 10px 10px;
 }
 
 p {
-  margin: 4px;
+  margin: 0;
 }
 
-.username {
-  font-weight: bold;
-}
+/* Post Content */
 
 .post {
-  width: 570px;
+  max-width: 570px;
+}
+
+/* Post Footer */
+
+.icon {
+  height: 40px;
+  width: 40px;
+  padding: 20px 5px 0 10px;
+}
+
+.footer-text {
+  padding-left: 10px;
+}
+
+.footer-text p {
+  margin: 10px 10px 30px 5px;
+}
+
+/* Typography */
+
+.bold-text {
+  font-weight: bold;
+  margin-right: 5px;
 }
