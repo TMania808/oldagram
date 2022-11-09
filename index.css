@@ -5,10 +5,28 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+header,
+section,
+.post-header,
+.post-user-info {
+  display: flex;
+}
+
+section,
+.post-user-info {
+  flex-direction: column;
+}
+
+.home-btn,
+.avatar:hover,
+.post:hover,
+.icon:hover {
+  cursor: pointer;
+}
+
 /* Page Header */
 
 header {
-    display: flex;
     justify-content: space-between;
     height: 100px;
     padding: 0 20px 13px 20px;
@@ -18,15 +36,12 @@ header {
 /* Post Header */
 
 section {
-  display: flex;
-  flex-direction: column;
   align-items: start;
   width: 570px;
   margin: 0 auto;
 }
 
 .post-header {
-  display: flex;
   margin-top: 40px;
 }
 
@@ -34,12 +49,10 @@ section {
     border-radius: 50%;
     height: 50px;
     padding: 10px 0;
-    margin: 0 0 10px 20px;
+    margin-bottom: 10px;
 }
 
 .post-user-info {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   padding: 10px 10px;
 }
@@ -51,7 +64,7 @@ p {
 /* Post Content */
 
 .post {
-  max-width: 570px;
+  width: 570px;
 }
 
 /* Post Footer */
@@ -59,12 +72,9 @@ p {
 .icon {
   height: 40px;
   width: 40px;
-  padding: 20px 5px 0 10px;
+  margin: 20px 5px 0 0;
 }
 
-.footer-text {
-  padding-left: 10px;
-}
 
 .footer-text p {
   margin: 10px 10px 30px 5px;
